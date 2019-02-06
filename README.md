@@ -1,5 +1,5 @@
 # Atik Assistant
-A plugin to assit Atik theme in adding widgets.
+A plugin to assist Atik theme in adding widgets.
 
 ### To use this follow the below steps
  1. Make sure you have [Atik Theme](https://codestag.com/themes/atik) installed and then clone or download this repo.

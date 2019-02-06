@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Atik Assistant
  * Plugin URI: https://github.com/Codestag/atik-assistant
- * Description: A plugin to assit Atik theme in adding widgets.
+ * Description: A plugin to assist Atik theme in adding widgets.
  * Author: Codestag
  * Author URI: https://codestag.com
  * Version: 1.0
