@@ -81,15 +81,15 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 		 * @since 1.0
 		 */
 		public function includes() {
-			require AA_PLUGIN_PATH . 'includes/widgets/section-category-boxes.php';
-			require AA_PLUGIN_PATH . 'includes/widgets/static-content.php';
-			require AA_PLUGIN_PATH . 'includes/widgets/featured-slide.php';
-			require AA_PLUGIN_PATH . 'includes/widgets/section-featured-slides.php';
-			require AA_PLUGIN_PATH . 'includes/widgets/section-feature-callout.php';
-			require AA_PLUGIN_PATH . 'includes/widgets/section-blog-post.php';
+			require_once AA_PLUGIN_PATH . 'includes/widgets/section-category-boxes.php';
+			require_once AA_PLUGIN_PATH . 'includes/widgets/static-content.php';
+			require_once AA_PLUGIN_PATH . 'includes/widgets/featured-slide.php';
+			require_once AA_PLUGIN_PATH . 'includes/widgets/section-featured-slides.php';
+			require_once AA_PLUGIN_PATH . 'includes/widgets/section-feature-callout.php';
+			require_once AA_PLUGIN_PATH . 'includes/widgets/section-blog-post.php';
 
 			if ( atik_is_woocommerce_activated() ) {
-				require AA_PLUGIN_PATH . 'includes/widgets/section-feature-product.php';
+				require_once AA_PLUGIN_PATH . 'includes/widgets/section-feature-product.php';
 			}
 
 			require_once AA_PLUGIN_PATH . 'includes/updater/updater.php';
