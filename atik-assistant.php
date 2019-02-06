@@ -127,7 +127,7 @@ function atik_assistant_activation_check() {
 		if ( function_exists( 'is_multisite' ) && is_multisite() ) {
 			add_action( 'after_setup_theme', 'atik_assistant' );
 		} else {
-			ink_assistant();
+			atik_assistant();
 		}
 	} else {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
@@ -135,5 +135,5 @@ function atik_assistant_activation_check() {
 	}
 }
 
-// Theme loads.
+// Plugin loads.
 atik_assistant_activation_check();
