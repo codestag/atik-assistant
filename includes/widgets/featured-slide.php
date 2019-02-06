@@ -22,23 +22,23 @@ if ( ! class_exists( 'Atik_Widget_Featured_Slide_Item' ) ) :
 		public function __construct() {
 			$this->widget_id          = 'atik_featured_slide';
 			$this->widget_cssclass    = 'atik_featured_slide';
-			$this->widget_description = esc_html__( 'Display Featured Slide, should be used only in &ldquo;Featured Slider Sidebar&rdquo; Area.', 'atik' );
-			$this->widget_name        = esc_html__( 'Featured Slide Item', 'atik' );
+			$this->widget_description = esc_html__( 'Display Featured Slide, should be used only in &ldquo;Featured Slider Sidebar&rdquo; Area.', 'atik-assitant' );
+			$this->widget_name        = esc_html__( 'Featured Slide Item', 'atik-assitant' );
 			$this->settings           = array(
 				'background_image' => array(
 					'type'  => 'image',
 					'std'   => null,
-					'label' => esc_html__( 'Background Image:', 'atik' ),
+					'label' => esc_html__( 'Background Image:', 'atik-assitant' ),
 				),
 				'content_text' => array(
 					'type'  => 'textarea',
 					'std'   => '',
-					'label' => esc_html__( 'Content:', 'atik' ),
+					'label' => esc_html__( 'Content:', 'atik-assitant' ),
 				),
 				'box_color' => array(
 					'type'  => 'colorpicker',
 					'std'   => '#fff',
-					'label' => esc_html__( 'Content Box Color:', 'atik' ),
+					'label' => esc_html__( 'Content Box Color:', 'atik-assitant' ),
 				),
 				'box_opacity' => array(
 					'type'  => 'number',
@@ -46,37 +46,37 @@ if ( ! class_exists( 'Atik_Widget_Featured_Slide_Item' ) ) :
 					'step'  => 5,
 					'min'   => 0,
 					'max'   => 100,
-					'label' => esc_html__( 'Content Box Opacity:', 'atik' ),
+					'label' => esc_html__( 'Content Box Opacity:', 'atik-assitant' ),
 				),
 				'text_color' => array(
 					'type'  => 'colorpicker',
 					'std'   => '#000',
-					'label' => esc_html__( 'Text Color:', 'atik' ),
+					'label' => esc_html__( 'Text Color:', 'atik-assitant' ),
 				),
 				'link_color' => array(
 					'type'  => 'colorpicker',
 					'std'   => '#000',
-					'label' => esc_html__( 'Link Color:', 'atik' ),
+					'label' => esc_html__( 'Link Color:', 'atik-assitant' ),
 				),
 				'content_position' => array(
 					'type'  => 'select',
 					'std'   => 'slide-content-left',
-					'label' => esc_html__( 'Content Position:', 'atik' ),
+					'label' => esc_html__( 'Content Position:', 'atik-assitant' ),
 					'options' => array(
-						'slide-content-left'   => esc_html__( 'Left', 'atik' ),
-						'slide-content-center' => esc_html__( 'Center', 'atik' ),
-						'slide-content-right'  => esc_html__( 'Right', 'atik' ),
+						'slide-content-left'   => esc_html__( 'Left', 'atik-assitant' ),
+						'slide-content-center' => esc_html__( 'Center', 'atik-assitant' ),
+						'slide-content-right'  => esc_html__( 'Right', 'atik-assitant' ),
 					),
 				),
 				'button_link' => array(
 					'type'  => 'text',
 					'std'   => '',
-					'label' => esc_html__( 'Button URL:', 'atik' ),
+					'label' => esc_html__( 'Button URL:', 'atik-assitant' ),
 				),
 				'button_text' => array(
 					'type'  => 'text',
 					'std'   => '',
-					'label' => esc_html__( 'Button Text:', 'atik' ),
+					'label' => esc_html__( 'Button Text:', 'atik-assitant' ),
 				),
 			);
 

@@ -20,9 +20,9 @@ class Atik_Feature_Product_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'atik_feature_product_widget',
-			esc_html__( 'Section: Product Grid', 'atik' ),
+			esc_html__( 'Section: Product Grid', 'atik-assitant' ),
 			array(
-				'description' => esc_html__( 'Display products from a category in several layouts.', 'atik' ),
+				'description' => esc_html__( 'Display products from a category in several layouts.', 'atik-assitant' ),
 				'classname'   => 'atik_widget_products_grid container',
 			)
 		);
@@ -183,12 +183,12 @@ class Atik_Feature_Product_Widget extends WP_Widget {
 		) );
 	?>
 	<p>
-		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'atik-assitant' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $title; ?>" />
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'show' ); ?>"><?php esc_html_e( 'Show:', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'show' ); ?>"><?php esc_html_e( 'Show:', 'atik-assitant' ); ?></label>
 		<select class="widefat" id="<?php echo $this->get_field_id( 'show' ); ?>" name="<?php echo $this->get_field_name( 'show' ); ?>">
 		<?php
 			echo '<option' . selected( $show, '' ) . ' value="">All Products</option>';
@@ -199,12 +199,12 @@ class Atik_Feature_Product_Widget extends WP_Widget {
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'cat_dropdown' ); ?>"><?php esc_html_e( 'Category:', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'cat_dropdown' ); ?>"><?php esc_html_e( 'Category:', 'atik-assitant' ); ?></label>
 		<?php echo $product_categories_dropdown;  ?>
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'sort' ); ?>"><?php esc_html_e( 'Sort by:', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'sort' ); ?>"><?php esc_html_e( 'Sort by:', 'atik-assitant' ); ?></label>
 		<select class="widefat" id="<?php echo $this->get_field_id( 'sort' ); ?>" name="<?php echo $this->get_field_name( 'sort' ); ?>">
 		<?php
 			echo '<option' . selected( $sort, 'title' ) . ' value="title">Product Name</option>';
@@ -220,7 +220,7 @@ class Atik_Feature_Product_Widget extends WP_Widget {
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'order' ); ?>"><?php esc_html_e( 'Sort Order:', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'order' ); ?>"><?php esc_html_e( 'Sort Order:', 'atik-assitant' ); ?></label>
 		<select class="widefat" id="<?php echo $this->get_field_id( 'order' ); ?>" name="<?php echo $this->get_field_name( 'order' ); ?>">
 		<?php
 			echo '<option' . selected( $order, 'ASC' ) . ' value="ASC">Ascending (A > Z)</option>';
@@ -230,12 +230,12 @@ class Atik_Feature_Product_Widget extends WP_Widget {
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'show_posts' ); ?>"><?php esc_html_e( 'Number of Products (Defaults to All):', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'show_posts' ); ?>"><?php esc_html_e( 'Number of Products (Defaults to All):', 'atik-assitant' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'show_posts' ); ?>" name="<?php echo $this->get_field_name( 'show_posts' ); ?>" value="<?php echo $show_posts; ?>" />
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'style' ); ?>"><?php esc_html_e( 'Select style:', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'style' ); ?>"><?php esc_html_e( 'Select style:', 'atik-assitant' ); ?></label>
 		<select class="widefat" id="<?php echo $this->get_field_id( 'style' ); ?>" name="<?php echo $this->get_field_name( 'style' ); ?>">
 		<?php
 			echo '<option' . selected( $style, 'layout-one' ) . ' value="layout-one">Style 1</option>';
@@ -245,7 +245,7 @@ class Atik_Feature_Product_Widget extends WP_Widget {
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'columns' ); ?>"><?php esc_html_e( 'Select Columns:', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'columns' ); ?>"><?php esc_html_e( 'Select Columns:', 'atik-assitant' ); ?></label>
 		<select class="widefat" id="<?php echo $this->get_field_id( 'columns' ); ?>" name="<?php echo $this->get_field_name( 'columns' ); ?>">
 		<?php
 			echo '<option' . selected( $columns, 'column-2' ) . ' value="column-2">2 Columns</option>';
@@ -256,12 +256,12 @@ class Atik_Feature_Product_Widget extends WP_Widget {
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Button Text: ', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Button Text: ', 'atik-assitant' ); ?></label>
 		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'button_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'button_text' ) ); ?>" type="text" value="<?php echo strip_tags( $button_text ); ?>" />
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'button_link' ); ?>"><?php esc_html_e( 'Button URL:', 'atik' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'button_link' ); ?>"><?php esc_html_e( 'Button URL:', 'atik-assitant' ); ?></label>
 		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'button_link' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'button_link' ) ); ?>" type="text" value="<?php echo esc_url( $button_link ); ?>" />
 	</p>
 

@@ -12,68 +12,68 @@ class Atik_Widget_Feature_Callout extends Atik_Widget {
 	 */
 	public function __construct() {
 		$this->widget_id          = 'atik_widget_feature_callout';
-		$this->widget_description = esc_html__( 'Displays a feature callout.', 'atik' );
-		$this->widget_name        = esc_html__( 'Section: Feature Callout', 'atik' );
+		$this->widget_description = esc_html__( 'Displays a feature callout.', 'atik-assitant' );
+		$this->widget_name        = esc_html__( 'Section: Feature Callout', 'atik-assitant' );
 		$this->settings           = array(
 			'title' => array(
 				'type'  => 'text',
 				'std'   => '',
-				'label' => __( 'Title:', 'atik' ),
+				'label' => __( 'Title:', 'atik-assitant' ),
 			),
 			'content' => array(
 				'type'  => 'textarea',
 				'std'   => '',
-				'label' => __( 'Content:', 'atik' ),
+				'label' => __( 'Content:', 'atik-assitant' ),
 				'rows'  => 5,
 			),
 			'text_align' => array(
 				'type'  => 'select',
 				'std'   => 'left',
-				'label' => __( 'Text Align:', 'atik' ),
+				'label' => __( 'Text Align:', 'atik-assitant' ),
 				'options' => array(
-					'left' => __( 'Left', 'atik' ),
-					'right' => __( 'Right', 'atik' ),
-					'center' => __( 'Center (cover only)', 'atik' ),
+					'left' => __( 'Left', 'atik-assitant' ),
+					'right' => __( 'Right', 'atik-assitant' ),
+					'center' => __( 'Center (cover only)', 'atik-assitant' ),
 				),
 			),
 			'vertical_align' => array(
 				'type'  => 'select',
 				'std'   => 'middle',
-				'label' => __( 'Vertical Alignment:', 'atik' ),
+				'label' => __( 'Vertical Alignment:', 'atik-assitant' ),
 				'options' => array(
-					'top' => __( 'Top', 'atik' ),
-					'middle' => __( 'Middle', 'atik' ),
-					'bottom' => __( 'Bottom', 'atik' ),
+					'top' => __( 'Top', 'atik-assitant' ),
+					'middle' => __( 'Middle', 'atik-assitant' ),
+					'bottom' => __( 'Bottom', 'atik-assitant' ),
 				),
 			),
 			'image' => array(
 				'type'  => 'image',
 				'std'   => null,
-				'label' => esc_html__( 'Image:', 'atik' ),
+				'label' => esc_html__( 'Image:', 'atik-assitant' ),
 			),
 			'background' => array(
 				'type'  => 'select',
 				'std'   => 'pull',
-				'label' => __( 'Image Style:', 'atik' ),
+				'label' => __( 'Image Style:', 'atik-assitant' ),
 				'options' => array(
-					'cover' => __( 'Cover', 'atik' ),
-					'pull'  => __( 'Pull Out', 'atik' ),
+					'cover' => __( 'Cover', 'atik-assitant' ),
+					'pull'  => __( 'Pull Out', 'atik-assitant' ),
 				),
 			),
 			'cover_overlay' => array(
 				'type' => 'checkbox',
 				'std'  => 1,
-				'label' => __( 'Use dark transparent overlay (cover only)', 'atik' ),
+				'label' => __( 'Use dark transparent overlay (cover only)', 'atik-assitant' ),
 			),
 			'text_color' => array(
 				'type'  => 'colorpicker',
 				'std'   => '#2b2828',
-				'label' => __( 'Text Color:', 'atik' ),
+				'label' => __( 'Text Color:', 'atik-assitant' ),
 			),
 			'background_color' => array(
 				'type'  => 'colorpicker',
 				'std'   => '#ffffff',
-				'label' => __( 'Background Color:', 'atik' ),
+				'label' => __( 'Background Color:', 'atik-assitant' ),
 			),
 		);
 
