@@ -102,7 +102,7 @@ endif;
  *
  * @since 1.0
  */
-function ink_assistant() {
+function atik_assistant() {
 	return Atik_Assistant::register();
 }
 
@@ -110,9 +110,9 @@ function ink_assistant() {
  *
  * @since 1.0
  */
-function ink_assistant_activation_notice() {
+function atik_assistant_activation_notice() {
 	echo '<div class="error"><p>';
-	echo esc_html__( 'Atik Assistant requires Atik WordPress Theme to be installed and activated.', 'ink-assistant' );
+	echo esc_html__( 'Atik Assistant requires Atik WordPress Theme to be installed and activated.', 'atik-assistant' );
 	echo '</p></div>';
 }
 
