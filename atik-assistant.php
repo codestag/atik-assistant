@@ -81,6 +81,7 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 		 * @since 1.0
 		 */
 		public function includes() {
+			require_once AA_PLUGIN_PATH . 'includes/class-widget.php';
 			require_once AA_PLUGIN_PATH . 'includes/widgets/section-category-boxes.php';
 			require_once AA_PLUGIN_PATH . 'includes/widgets/static-content.php';
 			require_once AA_PLUGIN_PATH . 'includes/widgets/featured-slide.php';
