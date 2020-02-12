@@ -1,4 +1,6 @@
 # Atik Assistant
+`~Current Version:1.1~`
+
 A plugin to assist Atik theme in adding widgets.
 
 ### To use this follow the below steps
