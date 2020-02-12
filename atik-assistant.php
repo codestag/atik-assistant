@@ -92,8 +92,6 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 			if ( function_exists( 'atik_is_woocommerce_activated' ) && atik_is_woocommerce_activated() ) {
 				require_once AA_PLUGIN_PATH . 'includes/widgets/section-feature-product.php';
 			}
-
-			require_once AA_PLUGIN_PATH . 'includes/updater/updater.php';
 		}
 	}
 endif;
