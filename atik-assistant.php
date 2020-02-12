@@ -81,10 +81,6 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 		 * @since 1.0
 		 */
 		public function includes() {
-			if ( ! class_exists( 'EDD_SL_Plugin_Updater' ) ) {
-				// load our custom updater if it doesn't already exist.
-				require_once AA_PLUGIN_PATH . 'includes/updater/EDD_SL_Plugin_Updater.php';
-			}
 			require_once AA_PLUGIN_PATH . 'includes/class-widget.php';
 			require_once AA_PLUGIN_PATH . 'includes/widgets/section-category-boxes.php';
 			require_once AA_PLUGIN_PATH . 'includes/widgets/static-content.php';
@@ -96,32 +92,8 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 			if ( function_exists( 'atik_is_woocommerce_activated' ) && atik_is_woocommerce_activated() ) {
 				require_once AA_PLUGIN_PATH . 'includes/widgets/section-feature-product.php';
 			}
-
-			$this->setup_updater();
 		}
 
-
-		/**
-		 * Setup plugin updater.
-		 *
-		 * @return void
-		 */
-		public function setup_updater() {
-			$item_id     = 10744;
-			$store_url   = 'https://codestag.com';
-
-			new \EDD_SL_Plugin_Updater(
-				$store_url,
-				__FILE__,
-				array(
-					'version' => AA_VERSION,
-					'license' => '',
-					'item_id' => $item_id,
-					'author'  => 'Codestag',
-					'beta'    => false,
-				)
-			);
-		}
 	}
 endif;
 
