@@ -123,13 +123,16 @@ function atik_assistant_activation_notice() {
  */
 function atik_assistant_activation_check() {
 	$theme = wp_get_theme(); // gets the current theme
-	if ( 'Atik' == $theme->name || 'Atik' == $theme->parent_theme ) {
+	if ( 'Atik' === $theme->name || 'Atik' === $theme->parent_theme ) {
 		if ( function_exists( 'is_multisite' ) && is_multisite() ) {
 			add_action( 'after_setup_theme', 'atik_assistant' );
 		} else {
 			atik_assistant();
 		}
 	} else {
+		if ( ! function_exists( 'deactivate_plugins' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
 		deactivate_plugins( plugin_basename( __FILE__ ) );
 		add_action( 'admin_notices', 'atik_assistant_activation_notice' );
 	}
