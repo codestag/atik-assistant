@@ -116,18 +116,14 @@ function atik_assistant_activation_notice() {
 }
 
 /**
- *
+ * Plugin activation check.
  *
  * @since 1.0
  */
 function atik_assistant_activation_check() {
 	$theme = wp_get_theme(); // gets the current theme
 	if ( 'Atik' === $theme->name || 'Atik' === $theme->parent_theme ) {
-		if ( function_exists( 'is_multisite' ) && is_multisite() ) {
 			add_action( 'after_setup_theme', 'atik_assistant' );
-		} else {
-			atik_assistant();
-		}
 	} else {
 		if ( ! function_exists( 'deactivate_plugins' ) ) {
 			require_once ABSPATH . 'wp-admin/includes/plugin.php';
