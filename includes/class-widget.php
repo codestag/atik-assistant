@@ -200,18 +200,18 @@ class Atik_Widget extends WP_Widget {
 								.stag-image-preview img { max-width: 100%; border: 1px solid #e5e5e5; padding: 2px; margin-bottom: 5px;  }
 							</style>
 							<?php if ( ! empty( $value ) ) : ?>
-							<img src="<?php echo esc_url( $value ); ?>" alt="<?php echo esc_attr__( 'Selected image preview', 'atik' ); ?>">
+							<img src="<?php echo esc_url( $value ); ?>" alt="<?php echo esc_attr__( 'Selected image preview', 'atik-assistant' ); ?>">
 							<?php endif; ?>
 						</div>
 
 						<input type="hidden" class="widefat" id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>" name="<?php echo $this->get_field_name( $key ); ?>"value="<?php echo $value; ?>" placeholder="http://" />
-						<a href="#" class="button-secondary <?php echo esc_attr( $this->get_field_id( $key ) ); ?>-add" onclick="imageWidget.uploader( '<?php echo $this->id; ?>', '<?php echo $id_prefix; ?>', '<?php echo $key; ?>' ); return false;"><?php esc_html_e( 'Choose Image', 'atik' ); ?></a>
+						<a href="#" class="button-secondary <?php echo esc_attr( $this->get_field_id( $key ) ); ?>-add" onclick="imageWidget.uploader( '<?php echo $this->id; ?>', '<?php echo $id_prefix; ?>', '<?php echo $key; ?>' ); return false;"><?php esc_html_e( 'Choose Image', 'atik-assistant' ); ?></a>
 						<a href="#" style="display:inline-block;margin:5px 0 0 3px;
 						<?php
 						if ( empty( $value ) ) {
 							echo 'display:none;';}
 						?>
-						" id="<?php echo esc_attr( $id_prefix ); ?>remove" class="button-link-delete" onclick="imageWidget.remove( '<?php echo $this->id; ?>', '<?php echo $id_prefix; ?>', '<?php echo $key; ?>' ); return false;"><?php esc_html_e( 'Remove', 'atik' ); ?></a>
+						" id="<?php echo esc_attr( $id_prefix ); ?>remove" class="button-link-delete" onclick="imageWidget.remove( '<?php echo $this->id; ?>', '<?php echo $id_prefix; ?>', '<?php echo $key; ?>' ); return false;"><?php esc_html_e( 'Remove', 'atik-assistant' ); ?></a>
 					</p>
 					<?php
 					break;
@@ -342,7 +342,7 @@ class Atik_Widget extends WP_Widget {
 						array(
 							'name'            => $this->get_field_name( 'category' ),
 							'selected'        => $value,
-							'show_option_all' => esc_html__( 'All Categories', 'atik' ),
+							'show_option_all' => esc_html__( 'All Categories', 'atik-assistant' ),
 							'show_count'      => true,
 							'orderby'         => 'slug',
 							'hierarchical'    => true,
