@@ -86,7 +86,7 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 			require_once AA_PLUGIN_PATH . 'includes/widgets/section-feature-callout.php';
 			require_once AA_PLUGIN_PATH . 'includes/widgets/section-blog-post.php';
 
-			if ( function_exists( 'atik_is_woocommerce_activated' ) && atik_is_woocommerce_activated() ) {
+			if ( class_exists( 'woocommerce' ) ) {
 				require_once AA_PLUGIN_PATH . 'includes/widgets/section-feature-product.php';
 			}
 		}
