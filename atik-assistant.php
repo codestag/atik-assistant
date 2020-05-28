@@ -5,7 +5,7 @@
  * Description: A plugin to assist Atik theme in adding widgets.
  * Author: Codestag
  * Author URI: https://codestag.com
- * Version: 1.1
+ * Version: 1.0
  * Text Domain: atik-assistant
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
@@ -21,39 +21,34 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! class_exists( 'Atik_Assistant' ) ) :
 	/**
+	 * Crux Assistant.
 	 *
 	 * @since 1.0
 	 */
 	class Atik_Assistant {
 
 		/**
+		 * Class instance.
 		 *
 		 * @since 1.0
 		 */
 		private static $instance;
 
 		/**
+		 * Register method to create a new instance.
 		 *
 		 * @since 1.0
 		 */
 		public static function register() {
 			if ( ! isset( self::$instance ) && ! ( self::$instance instanceof Atik_Assistant ) ) {
 				self::$instance = new Atik_Assistant();
-				self::$instance->init();
 				self::$instance->define_constants();
 				self::$instance->includes();
 			}
 		}
 
 		/**
-		 *
-		 * @since 1.0
-		 */
-		public function init() {
-			add_action( 'enqueue_assets', 'plugin_assets' );
-		}
-
-		/**
+		 *  Defines plugin constants.
 		 *
 		 * @since 1.0
 		 */
@@ -65,6 +60,7 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 		}
 
 		/**
+		 * Method to define a constant.
 		 *
 		 * @param string $name
 		 * @param string $value
@@ -77,6 +73,7 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 		}
 
 		/**
+		 * Includes plugin files.
 		 *
 		 * @since 1.0
 		 */
@@ -99,6 +96,7 @@ endif;
 
 
 /**
+ * Plugin class instance.
  *
  * @since 1.0
  */
@@ -107,6 +105,7 @@ function atik_assistant() {
 }
 
 /**
+ * Plugin activation notice.
  *
  * @since 1.0
  */
