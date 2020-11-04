@@ -1,0 +1,17 @@
+# Gulp
+/node_modules/
+/build/
+atik-assistant-*.zip
+npm-debug.log
+
+
+# Transifex
+/languages
+# PhpStorm
+.idea
+
+# macOS
+.DS_Store
+
+# Composer
+/vendor

@@ -1,5 +1,9 @@
 ### Atik assistant changelog
 
+## 1.0.1 - November 04, 2020
+* Fix undefined key ajax error while saving widgets
+* Add translation support
+
 ## 1.0.0 - May 27, 2020
 * Initial release
 
