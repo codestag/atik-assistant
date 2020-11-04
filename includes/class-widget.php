@@ -122,14 +122,14 @@ class Atik_Widget extends WP_Widget {
 			switch ( $setting['type'] ) {
 				case 'textarea':
 					if ( current_user_can( 'unfiltered_html' ) ) {
-						$instance[ $key ] = $new_instance[ $key ];
+						$instance[ $key ] = isset( $new_instance[ $key ] ) ? $new_instance[ $key ] : '';
 					} else {
-						$instance[ $key ] = wp_kses_data( $new_instance[ $key ] );
+						$instance[ $key ] = isset( $new_instance[ $key ] ) ? wp_kses_data( $new_instance[ $key ] ) : '';
 					}
 					break;
 
 				case 'multicheck':
-					$instance[ $key ] = maybe_serialize( $new_instance[ $key ] );
+					$instance[ $key ] = isset( $new_instance[ $key ] ) ? maybe_serialize( $new_instance[ $key ] ) : '';
 					break;
 
 				case 'text':
@@ -137,7 +137,7 @@ class Atik_Widget extends WP_Widget {
 				case 'select':
 				case 'number':
 				case 'colorpicker':
-					$instance[ $key ] = sanitize_text_field( $new_instance[ $key ] );
+					$instance[ $key ] = isset( $new_instance[ $key ] ) ? sanitize_text_field( $new_instance[ $key ] ) : '';
 					break;
 
 				default:
