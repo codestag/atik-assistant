@@ -5,7 +5,7 @@
  * Description: A plugin to assist Atik theme in adding widgets.
  * Author: Codestag
  * Author URI: https://codestag.com
- * Version: 1.0
+ * Version: 1.0.1
  * Text Domain: atik-assistant
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
@@ -53,7 +53,7 @@ if ( ! class_exists( 'Atik_Assistant' ) ) :
 		 * @since 1.0
 		 */
 		public function define_constants() {
-			$this->define( 'AA_VERSION', '1.1' );
+			$this->define( 'AA_VERSION', '1.0.1' );
 			$this->define( 'AA_DEBUG', true );
 			$this->define( 'AA_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 			$this->define( 'AA_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
