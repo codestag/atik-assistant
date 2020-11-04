@@ -1,5 +1,5 @@
 # Atik Assistant
-`~Current Version:1.1~`
+`~Current Version:1.0.1~`
 
 A plugin to assist Atik theme in adding widgets.
 
