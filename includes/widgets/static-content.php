@@ -22,23 +22,23 @@ if ( ! class_exists( 'Atik_Widget_Static_Content' ) ) :
 		public function __construct() {
 			$this->widget_id          = 'atik_static_content';
 			$this->widget_cssclass    = 'atik_static_content';
-			$this->widget_description = esc_html__( 'Displays content from a specific page.', 'atik-assitant' );
-			$this->widget_name        = esc_html__( 'Section: Static Content', 'atik-assitant' );
+			$this->widget_description = esc_html__( 'Displays content from a specific page.', 'atik-assistant' );
+			$this->widget_name        = esc_html__( 'Section: Static Content', 'atik-assistant' );
 			$this->settings           = array(
 				'title' => array(
 					'type'  => 'text',
 					'std'   => '',
-					'label' => esc_html__( 'Title:', 'atik-assitant' ),
+					'label' => esc_html__( 'Title:', 'atik-assistant' ),
 				),
 				'page' => array(
 					'type'  => 'page',
 					'std'   => '',
-					'label' => esc_html__( 'Select Page:', 'atik-assitant' ),
+					'label' => esc_html__( 'Select Page:', 'atik-assistant' ),
 				),
 				'background_image' => array(
 					'type'  => 'image',
 					'std'   => null,
-					'label' => esc_html__( 'Background Image:', 'atik-assitant' ),
+					'label' => esc_html__( 'Background Image:', 'atik-assistant' ),
 				),
 				'background_opacity' => array(
 					'type'  => 'number',
@@ -46,22 +46,22 @@ if ( ! class_exists( 'Atik_Widget_Static_Content' ) ) :
 					'step'  => '10',
 					'min'   => '10',
 					'max'   => '100',
-					'label' => esc_html__( 'Background Opacity:', 'atik-assitant' ),
+					'label' => esc_html__( 'Background Opacity:', 'atik-assistant' ),
 				),
 				'background_color' => array(
 					'type'  => 'colorpicker',
 					'std'   => '#fff',
-					'label' => esc_html__( 'Background Color:', 'atik-assitant' ),
+					'label' => esc_html__( 'Background Color:', 'atik-assistant' ),
 				),
 				'text_color' => array(
 					'type'  => 'colorpicker',
 					'std'   => '#000',
-					'label' => esc_html__( 'Text Color:', 'atik-assitant' ),
+					'label' => esc_html__( 'Text Color:', 'atik-assistant' ),
 				),
 				'link_color' => array(
 					'type'  => 'colorpicker',
 					'std'   => '#000',
-					'label' => esc_html__( 'Link Color:', 'atik-assitant' ),
+					'label' => esc_html__( 'Link Color:', 'atik-assistant' ),
 				),
 			);
 
@@ -97,7 +97,7 @@ if ( ! class_exists( 'Atik_Widget_Static_Content' ) ) :
 			echo  $before_widget;
 
 			// Allow site-wide customization of the 'Read more' link text.
-			$read_more = apply_filters( 'atik_read_more_text', esc_html__( 'Read more', 'atik-assitant' ) );
+			$read_more = apply_filters( 'atik_read_more_text', esc_html__( 'Read more', 'atik-assistant' ) );
 			?>
 
 			<?php if ( '' !== $background_image ) : ?>

@@ -22,27 +22,27 @@ if ( ! class_exists( 'Atik_Widget_Blog_Post' ) ) :
 		public function __construct() {
 			$this->widget_id          = 'atik_blog_post';
 			$this->widget_cssclass    = 'atik_blog_post';
-			$this->widget_description = esc_html__( 'Displays content from blog posts.', 'atik-assitant' );
-			$this->widget_name        = esc_html__( 'Section: Blog Posts', 'atik-assitant' );
+			$this->widget_description = esc_html__( 'Displays content from blog posts.', 'atik-assistant' );
+			$this->widget_name        = esc_html__( 'Section: Blog Posts', 'atik-assistant' );
 			$this->settings           = array(
 				'title' => array(
 					'type'  => 'text',
 					'std'   => '',
-					'label' => esc_html__( 'Title:', 'atik-assitant' ),
+					'label' => esc_html__( 'Title:', 'atik-assistant' ),
 				),
 				'category' => array(
 					'type'  => 'category',
 					'std'   => 0,
-					'label' => esc_html__( 'Category:', 'atik-assitant' ),
+					'label' => esc_html__( 'Category:', 'atik-assistant' ),
 				),
 				'blog_layout' => array(
 					'type'  => 'select',
 					'std'   => 'one',
-					'label' => esc_html__( 'Select layout:', 'atik-assitant' ),
+					'label' => esc_html__( 'Select layout:', 'atik-assistant' ),
 					'options' => array(
-						'one'   => esc_html__( 'Layout 1', 'atik-assitant' ),
-						'two'   => esc_html__( 'Layout 2', 'atik-assitant' ),
-						'three' => esc_html__( 'Layout 3', 'atik-assitant' ),
+						'one'   => esc_html__( 'Layout 1', 'atik-assistant' ),
+						'two'   => esc_html__( 'Layout 2', 'atik-assistant' ),
+						'three' => esc_html__( 'Layout 3', 'atik-assistant' ),
 					),
 				),
 				'post_count' => array(
@@ -51,22 +51,22 @@ if ( ! class_exists( 'Atik_Widget_Blog_Post' ) ) :
 					'step'  => 1,
 					'min'   => 1,
 					'max'   => 100,
-					'label' => esc_html__( 'Number of Posts:', 'atik-assitant' ),
+					'label' => esc_html__( 'Number of Posts:', 'atik-assistant' ),
 				),
 				'random_order' => array(
 					'type'  => 'checkbox',
 					'std'   => 0,
-					'label' => __( 'Random order?', 'atik-assitant' ),
+					'label' => __( 'Random order?', 'atik-assistant' ),
 				),
 				'button_text' => array(
 					'type'  => 'text',
 					'std'   => '',
-					'label' => esc_html__( 'Button Text:', 'atik-assitant' ),
+					'label' => esc_html__( 'Button Text:', 'atik-assistant' ),
 				),
 				'button_link' => array(
 					'type'  => 'text',
 					'std'   => '',
-					'label' => esc_html__( 'Button Link:', 'atik-assitant' ),
+					'label' => esc_html__( 'Button Link:', 'atik-assistant' ),
 				),
 			);
 
@@ -117,7 +117,7 @@ if ( ! class_exists( 'Atik_Widget_Blog_Post' ) ) :
 			echo  $before_widget;
 
 			// Allow site-wide customization of the 'Read more' link text.
-			$read_more = apply_filters( 'atik_read_more_text', esc_html__( 'Read more', 'atik-assitant' ) );
+			$read_more = apply_filters( 'atik_read_more_text', esc_html__( 'Read more', 'atik-assistant' ) );
 			$button_text = isset( $instance['button_text'] ) ? strip_tags( $instance['button_text'] ) : '';
 			$button_link = isset( $instance['button_link'] ) ? esc_url( $instance['button_link'] ) : '';
 			?>
@@ -128,7 +128,7 @@ if ( ! class_exists( 'Atik_Widget_Blog_Post' ) ) :
 
 				<?php
 				if ( $title ) {
-					echo  $before_title . $title . $after_title;
+					echo $before_title . $title . $after_title;
 
 					// Output view more button.
 					if ( '' !== $button_text ) : ?>

@@ -121,7 +121,7 @@ function atik_assistant_activation_notice() {
  * @since 1.0
  */
 function atik_assistant_activation_check() {
-	$theme = wp_get_theme(); // gets the current theme
+	$theme = wp_get_theme(); // gets the current theme.
 	if ( 'Atik' === $theme->name || 'Atik' === $theme->parent_theme ) {
 			add_action( 'after_setup_theme', 'atik_assistant' );
 	} else {

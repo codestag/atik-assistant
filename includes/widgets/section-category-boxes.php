@@ -22,13 +22,13 @@ if ( ! class_exists( 'Atik_Widget_Category_Boxes' ) ) :
 		public function __construct() {
 			$this->widget_id          = 'atik_widget_category_boxes';
 			$this->widget_cssclass    = 'atik_widget_category_boxes';
-			$this->widget_description = esc_html__( 'Displays Category Boxes.', 'atik-assitant' );
-			$this->widget_name        = esc_html__( 'Section: Category Boxes', 'atik-assitant' );
+			$this->widget_description = esc_html__( 'Displays Category Boxes.', 'atik-assistant' );
+			$this->widget_name        = esc_html__( 'Section: Category Boxes', 'atik-assistant' );
 			$this->settings           = array(
 				'title' => array(
 					'type'  => 'text',
 					'std'   => '',
-					'label' => esc_html__( 'Title:', 'atik-assitant' ),
+					'label' => esc_html__( 'Title:', 'atik-assistant' ),
 				),
 				'features' => array(
 					'type' => 'features',
@@ -143,24 +143,24 @@ if ( ! class_exists( 'Atik_Widget_Category_Boxes' ) ) :
 	 	?>
 
 			<div id="features-<?php echo $widget->id; ?>">
-				<p><a href="#" class="button-add-feature button button-secondary"><?php esc_html_e( 'Add Box', 'atik-assitant' ); ?></a></p>
+				<p><a href="#" class="button-add-feature button button-secondary"><?php esc_html_e( 'Add Box', 'atik-assistant' ); ?></a></p>
 			</div>
 
 			<script id="tmpl-feature" type="text/template">
 				<a href="#" class="button-remove-feature">&nbsp;</a>
 
 				<p>
-					<label><?php esc_html_e( 'Background Image:', 'atik-assitant' ); ?></label>
+					<label><?php esc_html_e( 'Background Image:', 'atik-assistant' ); ?></label>
 					<input type="text" class="widefat" name="<?php echo $this->get_field_name( $key ); ?>[<%= order %>][background]" value="<%= background %>" placeholder="http://" />
 				</p>
 
 				<p>
-					<label><?php esc_html_e( 'Button Text:', 'atik-assitant' ); ?></label>
+					<label><?php esc_html_e( 'Button Text:', 'atik-assistant' ); ?></label>
 					<input name="<?php echo $this->get_field_name( $key ); ?>[<%= order %>][button_text]" type="text" value="<%= button_text %>" class="widefat" />
 				</p>
 
 				<p>
-					<label><?php esc_html_e( 'Button URL:', 'atik-assitant' ); ?></label>
+					<label><?php esc_html_e( 'Button URL:', 'atik-assistant' ); ?></label>
 					<input name="<?php echo $this->get_field_name( $key ); ?>[<%= order %>][button_url]" type="text" value="<%= button_url %>" class="widefat" />
 				</p>
 

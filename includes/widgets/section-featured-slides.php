@@ -22,16 +22,16 @@ if ( ! class_exists( 'Atik_Widget_Featured_Slides' ) ) :
 		public function __construct() {
 			$this->widget_id          = 'atik_widget_featured_slides';
 			$this->widget_cssclass    = 'atik_widget_featured_slides';
-			$this->widget_description = esc_html__( 'Displays all contents under &ldquo;Featured Slides Sidebar&rdquo; Area.', 'atik-assitant' );
-			$this->widget_name        = esc_html__( 'Section: Featured Slides', 'atik-assitant' );
+			$this->widget_description = esc_html__( 'Displays all contents under &ldquo;Featured Slides Sidebar&rdquo; Area.', 'atik-assistant' );
+			$this->widget_name        = esc_html__( 'Section: Featured Slides', 'atik-assistant' );
 			$this->settings           = array(
 				'flex_transition' => array(
 					'type'  => 'select',
 					'std'   => 'fade',
-					'label' => esc_html__( 'Transition Effect:', 'atik-assitant' ),
+					'label' => esc_html__( 'Transition Effect:', 'atik-assistant' ),
 					'options' => array(
-						'fade'  => esc_html__( 'Fade', 'atik-assitant' ),
-						'slide' => esc_html__( 'Slide', 'atik-assitant' ),
+						'fade'  => esc_html__( 'Fade', 'atik-assistant' ),
+						'slide' => esc_html__( 'Slide', 'atik-assistant' ),
 					),
 				),
 				'flex_speed' => array(
@@ -40,22 +40,22 @@ if ( ! class_exists( 'Atik_Widget_Featured_Slides' ) ) :
 					'step'  => 1,
 					'min'   => 1,
 					'max'   => 100,
-					'label' => esc_html__( 'Speed of the slideshow change in seconds:', 'atik-assitant' ),
+					'label' => esc_html__( 'Speed of the slideshow change in seconds:', 'atik-assistant' ),
 				),
 				'flex_pause' => array(
 					'type'  => 'checkbox',
 					'std'   => 0,
-					'label' => esc_html__( 'Pause slideshow when hover?', 'atik-assitant' ),
+					'label' => esc_html__( 'Pause slideshow when hover?', 'atik-assistant' ),
 				),
 				'slide_pagination' => array(
 					'type'  => 'checkbox',
 					'std'   => 0,
-					'label' => esc_html__( 'Show slide pagination?', 'atik-assitant' ),
+					'label' => esc_html__( 'Show slide pagination?', 'atik-assistant' ),
 				),
 				'hide_on_mobile' => array(
 					'type'  => 'checkbox',
 					'std'   => 0,
-					'label' => esc_html__( 'Hide on mobile?', 'atik-assitant' ),
+					'label' => esc_html__( 'Hide on mobile?', 'atik-assistant' ),
 				),
 			);
 
